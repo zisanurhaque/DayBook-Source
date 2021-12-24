@@ -1,0 +1,272 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: bahnschrift;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+$borderColor: rgb(255, 255, 255);
+$primaryColor: rgb(22, 22, 48);
+$linkColor: rgb(255, 251, 0);
+
+h4,
+h5 {
+  padding: 0px;
+  margin: 0px;
+}
+.header {
+  float: left;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background: $primaryColor;
+  align-items: center;
+  padding: 0px 100px;
+}
+.brand h4 {
+  padding: 0px;
+  margin: 0px;
+  color: $linkColor;
+}
+.header p {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+.header a {
+  text-decoration: none;
+  color: $linkColor;
+  margin-right: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  float: left;
+  padding: 50px 200px;
+  background: rgb(0, 116, 67);
+}
+.desc {
+  width: 100%;
+  float: left;
+  padding-bottom: 40px;
+}
+.desc p {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+  color: $linkColor;
+}
+
+.dataInsert {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+}
+.dataInsert input,
+button {
+  float: left;
+  border: none !important;
+  border-radius: 2px;
+  outline: none;
+  padding: 7px;
+  color: rgb(0, 0, 0);
+}
+.inputDate {
+  width: 20%;
+}
+.title {
+  width: 42%;
+  padding: 5px 10px !important;
+}
+.value {
+  width: 20%;
+}
+.dataInsert button {
+  width: 8%;
+  background: $primaryColor;
+  color: white;
+}
+.dbt {
+  background: $linkColor !important;
+  border: 2px solid $linkColor !important;
+  color: black !important;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  float: left;
+}
+tr {
+  display: flex;
+}
+th {
+  border-top: 1px solid $borderColor;
+  border-bottom: 1px solid $borderColor;
+  font-weight: 400;
+}
+th,
+td {
+  padding: 5px 10px;
+  float: left;
+  margin: 0px;
+  width: 100%;
+}
+td {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.date {
+  width: 20%;
+  border-left: 1px solid $borderColor;
+}
+.date button {
+  padding: 2px 5px;
+  font-size: 10px;
+  border: none;
+  float: right;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 83, 44);
+}
+.date button:hover {
+  background: $linkColor;
+  color: rgb(0, 0, 0);
+}
+.description {
+  width: 45%;
+  border-left: 1px solid $borderColor;
+}
+.ext {
+  width: 5%;
+  border-left: 1px solid $borderColor;
+}
+.debit {
+  width: 15%;
+  border-left: 1px solid $borderColor;
+}
+.credit {
+  width: 15%;
+  border-left: 1px solid $borderColor;
+  border-right: 1px solid $borderColor;
+  text-align: right !important;
+  justify-content: right !important;
+}
+
+.footer {
+  width: 100%;
+  float: left;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primaryColor;
+}
+.footer p {
+  padding: 0px;
+  margin: 0px;
+}
+.footer a {
+  color: $linkColor;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1279px) {
+  * {
+    font-size: 14px;
+  }
+  .header {
+    padding: 0px 20px;
+    height: 50px;
+  }
+  main {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 10px;
+  }
+  .header {
+    padding: 0px 10px;
+    height: 50px;
+  }
+  .header h4 {
+    font-size: 20px;
+  }
+  .header p {
+    font-size: 12px;
+  }
+  .header a {
+    font-size: 12px;
+  }
+  main {
+    padding: 10px;
+  }
+  .desc {
+    padding-bottom: 10px;
+  }
+  .dataInsert {
+    display: block;
+  }
+  .dataInsert input,
+  button {
+    padding: 3px;
+  }
+  th,
+  td {
+    padding: 3px 5px;
+  }
+  td {
+    display: block;
+  }
+  .date button {
+    padding: 2px 5px;
+    font-size: 8px;
+  }
+  .description {
+    width: 42%;
+    border-left: 1px solid $borderColor;
+  }
+  .ext {
+    width: 8%;
+    border-left: 1px solid $borderColor;
+  }
+
+  .dataInsert input,
+  button {
+    padding: 5px;
+    margin: 2px 0px;
+  }
+  .inputDate {
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+  }
+  .value {
+    width: 100%;
+  }
+  .dataInsert button {
+    width: 100%;
+  }
+  .dbt {
+    border: none !important;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+  .footer a {
+    font-size: 12px;
+  }
+}
